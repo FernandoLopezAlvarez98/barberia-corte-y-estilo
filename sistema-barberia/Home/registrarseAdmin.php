@@ -49,7 +49,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <div class="wrapper">
         <div class="title">Registro</div>
-        <form action="InicioSesion/registrarse.php" method="POST">
+        <form action="../InicioSesion/registrarseAdmin.php" method="POST">
             <div class="field">
                 <input type="text" id="username" name="username" required>
                 <label for="username">Nombre de usuario</label>
@@ -77,9 +77,11 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="field">
                 <input type="submit" value="Registrar">
             </div>
+            <!--
             <div class="signup-link">
                 ¿Ya tienes cuenta? <a href="iniciarSesion.php">Iniciar sesión</a>
             </div>
+            -->
         </form>
     </div>
 </body>

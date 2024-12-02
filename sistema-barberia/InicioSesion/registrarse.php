@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 'username' => $username,
                 'email' => $email,
                 'phone' => $phone,
-                'role_id' => $role_id,
+                'role_id' => 3,
                 'password' => $password,
         ]);
 
