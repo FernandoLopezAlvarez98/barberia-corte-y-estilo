@@ -1,0 +1,286 @@
+/*Importar fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Playfair Display',Arial;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+header .logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .search {
+    margin-left: 20px;
+}
+
+nav .search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main-banner {
+    position: relative;
+    text-align: center;
+    background-image: url('../images/team.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Playfair Display',Arial;
+}
+
+.main-banner h1 {
+    font-size: 42px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Playfair Display',Arial;
+}
+
+.main-banner p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-family: 'Playfair Display',Arial;
+    text-align: justify;
+}
+
+.section-box {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-box img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container div {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 30%;
+}
+
+.flex-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+.small-text {
+    text-align: center;
+    font-size: 14px;
+    color: #f0b000ce;
+    margin-top: 20px;
+}
+
+/* Estilos para la sección "Nuestros Barberos" */
+.barber-section {
+    background-image: url('../images_assets/back.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.barber-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.barber-team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.barber {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.barber img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #f0b000ce;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.barber h3 {
+    margin: 10px 0 5px 0;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 5px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f0b000ce;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .flex-container div {
+        flex: 1 1 45%;
+    }
+
+    .barber {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-container div {
+        flex: 1 1 100%;
+    }
+
+    .barber {
+        width: 100%;
+    }
+}
+
+/*Footer*/
+* Footer */
+.footer {
+    background-image: url('../images_assets/footer_background.jpg'); /* Reemplaza con la imagen adecuada */
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-content {
+    background-image: url('../images_assets/footer_background.jpg');
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: #F97316; /* Naranja cálido */
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff; /* Verde esmeralda */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #F97316; /* Naranja cálido */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: #F97316; /* Naranja cálido */
+    font-size: 14px;
+}
+
+.footer-section img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.footer-title h2 {
+    font-size: 50px;
+    font-family: 'Playfair Display',Arial;
+    color: #c79e56;
+}
+
+.footer-title h3 {
+    color: #000;
+}

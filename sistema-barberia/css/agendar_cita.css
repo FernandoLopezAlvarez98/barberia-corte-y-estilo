@@ -1,0 +1,148 @@
+/*Importar fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display',Arial;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #f97316;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/cita.jpg'); /* Reemplazar con tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #c79e56;
+    font-style: italic;
+    /*text-shadow: -1px -1px #ddd, -1px 1px #ddd, 1px 1px #ddd, 1px -1px #ddd;*/
+}
+
+.hero p {
+    font-size: 18px;
+    color: #c79e56;
+}
+
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}   
+
+.contact-form p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #888;
+    border-radius: 4px;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #f97316;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e66412;
+}
+
+.btn-iniciar-sesion{
+    color: #fff;
+    background: #e66412;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-registrarse{
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.btns {
+    background-size: 100px 40px; 
+}
