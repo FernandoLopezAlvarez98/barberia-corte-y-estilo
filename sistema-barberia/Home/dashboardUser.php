@@ -29,13 +29,14 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Dashboard de Administrador</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="icon" href="../images/logo.png">
 </head>
 <body>
     <div class="sidebar">
         <h1 style="font-size: 30px;">Hola, <?php echo $_SESSION['username']; ?></h1>
-        <a href="secretary_dashboard.php">Inicio</a>
+        <a href="../Home/dashboardUser.php">Inicio</a>
         <a href="../registrarse.php">Agregar Usuario</a>
-        <a href="agendarCita.php">Citas</a>
+        <a href="../Home/adminCitas.php">Citas</a>
         <a href="">Correo</a>
         <a href="">Barberos</a>
         <a href="">Horarios</a>

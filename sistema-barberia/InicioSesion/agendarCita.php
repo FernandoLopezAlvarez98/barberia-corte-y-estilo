@@ -21,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $connection = new Connection();
         $pdo = $connection->connect();
 
-        $sql = "INSERT INTO cita(id_barbero,id_servicio, fecha, hora, confirmada) 
-                            VALUES (:barbero, :servicio, :fecha, :hora, :confirmada)";
+        $sql = "INSERT INTO cita(id_barbero,id_servicio, fecha, hora, confirmada, nombre, apellidos, correo, telefono, mensaje) 
+                            VALUES (:barbero, :servicio, :fecha, :hora, :confirmada, :nombre, :apellidos,:correo, :telefono, :mensaje)";
 
         $stmt = $pdo -> prepare($sql);
 
@@ -33,6 +33,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
                 'fecha' => $fecha,
                 'hora' => $hora,
                 'confirmada' => $confirmada,
+                'nombre' => $nombre,
+                'apellidos' => $apellido,
+                'correo' => $correo,
+                'telefono' => $telefono,
+                'mensaje' => $manseaje,
         ]);
 
         echo "

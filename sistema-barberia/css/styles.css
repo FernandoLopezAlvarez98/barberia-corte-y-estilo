@@ -12,6 +12,9 @@ html,body{
   place-items: center;
   background: #f2f2f2;
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  background-image: url("../images_assets/pngtree-barber-tools-top-view-of-barbershop-tools-lying-on-the-wood-image_15737335.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 ::selection{
   background: #4158d0;
@@ -31,7 +34,7 @@ html,body{
   color: #fff;
   user-select: none;
   border-radius: 15px 15px 0 0;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, #ff9a3c, #f97316);
 }
 .wrapper form{
   padding: 10px 30px 50px 30px;
@@ -109,7 +112,7 @@ form .field input[type="submit"]{
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: #000;
   transition: all 0.3s ease;
 }
 form .field input[type="submit"]:active{
@@ -186,7 +189,7 @@ form .signup-link a:hover{
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background: #000;/*-----------*/
     transition: all 0.3s ease;
 }
 
@@ -218,7 +221,7 @@ form .signup-link a:hover{
 
 .sidebar {
     width: 250px;
-    background: #4158d0;
+    background: #aaa;
     color: #fff;
     padding: 10px;
     height: 100%;
@@ -238,11 +241,11 @@ form .signup-link a:hover{
     border-radius: 10px;
     padding: 5px 20px;
     font-size: 18px;
-    background-color: #415fd0;
+    background-color: #222;
     text-decoration: none;
 }
 .sidebar a:hover {
-    background: #c850c0;
+    background: #555;
     border-radius: 5px;
 }
 .main {
@@ -276,7 +279,7 @@ form .signup-link a:hover{
 .sidebar {
     height: 100%;
     width: 250px;
-    background: #4158d0;
+    background: #333;
     position: fixed;
     top: 0;
     left: 0;
@@ -341,7 +344,7 @@ form .signup-link a:hover{
     text-align: left;
 }
 .user-list th {
-    background: #4158d0;
+    background: #333;
     color: #fff;
 }
 
@@ -372,3 +375,29 @@ form .signup-link a:hover{
 .btn{
   border-radius: 5px;
 }
+
+.btn-agregar-cita {
+  background-color: #61c633;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  color: #353535;
+  font-weight: bold;
+  float: left;
+}
+
+.header-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title input[type="submit"]:hover{
+  background-color: #4da325;
+}
+
+.header-title input[type="submit"]:active {
+  transform: scale(0.95);
+  background-color: #7ef547;
+}
+

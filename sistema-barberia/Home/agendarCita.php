@@ -29,7 +29,7 @@ $barbers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 <header>
         <div class="logo">
-            <img src="../images/logo.png" alt="Logo Barbería">
+            <a href="../index.php"><img src="../images/logo.png" alt="Logo Barbería"></a>
             <span>Corte y Estilo</span>
         </div>
         <nav>
