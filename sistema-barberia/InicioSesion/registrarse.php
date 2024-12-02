@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $role_id = $_POST['role_id'];
 
     //Ingresar datos a la base de datos
     try{

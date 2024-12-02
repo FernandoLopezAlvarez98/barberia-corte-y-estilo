@@ -13,7 +13,7 @@ html,body{
   background: #f2f2f2;
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
   background-image: url("../images_assets/pngtree-barber-tools-top-view-of-barbershop-tools-lying-on-the-wood-image_15737335.jpg");
-  background-repeat: no-repeat;
+
   background-size: 100%;
 }
 ::selection{

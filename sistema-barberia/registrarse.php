@@ -31,12 +31,11 @@
                 <input type="tel" id="phone" name="phone" required>
                 <label for="phone">Teléfono</label>
             </div>
-            <div class="field">
+            <div class="field" hidden>
                 <select id="role_id" name="role_id" required>
                     <option value="1">Administrador</option>
                     <option value="2">Barbero</option>
                     <option value="3">Cliente</option>
-                    <!-- Ajusta los valores según los roles disponibles en tu base de datos -->
                 </select>
                 <label for="role_id">Rol</label>
             </div>

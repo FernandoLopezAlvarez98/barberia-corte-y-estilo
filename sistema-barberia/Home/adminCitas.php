@@ -38,7 +38,7 @@ $oppointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div class="sidebar">
         <h1 style="font-size: 30px;">Hola, <?php echo $_SESSION['username']; ?></h1>
         <a href="../Home/dashboardUser.php">Inicio</a>
-        <a href="../registrarse.php">Agregar Usuario</a>
+        <a href="../Home/registrarseAdmin.php">Agregar Usuario</a>
         <a href="../Home/adminCitas.php">Citas</a>
         <a href="">Correo</a>
         <a href="">Barberos</a>
@@ -46,17 +46,15 @@ $oppointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <a href="../InicioSesion/cerrarSesion.php">Cerrar sesión</a>
     </div>
     <div class="main-content">
-        <div class="header">
-            <h1>Dashboard</h1>
-        </div>
         <div class="user-list">
             <div class="header-title">
-                <h2>Citas</h2>
+                <h2>Reporte de citas</h2>
                 <input type="submit" value="Generar cita" class="btn-agregar-cita">
             </div>
             <table>
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>ID</th>
                         <th>Nombre cliente</th>
                         <th>Telefono</th>
@@ -64,12 +62,13 @@ $oppointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <th>Barbero</th>
                         <th>Fecha</th>
                         <th>Hora</th>
-                        <th>Confirmada</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($oppointments as $oppointment): ?>
+                    <?php $contador = 1; foreach ($oppointments as $oppointment): ?>
                         <tr>
+                            <td><?php echo $contador++; ?></td>
                             <td><?php echo htmlspecialchars($oppointment['id_cita']); ?></td>
                             <td><?php echo htmlspecialchars($oppointment['nombre']); ?> <?php echo htmlspecialchars($oppointment['apellidos']);?></td>
                             <td><?php echo htmlspecialchars($oppointment['telefono']); ?></td>
